@@ -35,7 +35,7 @@ public class MovieController {
         String ans=movieService.pairMoieDirector(movieName,directorName);
         return new ResponseEntity<>(ans,HttpStatus.CREATED);
     }
-
+//b
     @GetMapping("/get-movie-by-name/{name}")
     public ResponseEntity<Movie> getMovieByName(@PathVariable("movieName")String movieName){
         Movie ans=movieService.getMovieByName(movieName);
