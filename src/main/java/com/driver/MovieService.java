@@ -31,8 +31,8 @@ public class MovieService {
         Director ans=movieRepository.getDirectorByName(directorName);
         return ans;
     }
-    public List<Movie> getMoviesByDirectorName(String directorName){
-        List<Movie> movieList=movieRepository.getMoviesByDirectorName(directorName);
+    public List<String> getMoviesByDirectorName(String directorName){
+        List<String> movieList=movieRepository.getMoviesByDirectorName(directorName);
         return movieList;
     }
 
@@ -44,8 +44,8 @@ public class MovieService {
         String ans=movieRepository.deleteAllDirectors();
         return ans;
     }
-    public List<Movie> findAllMovies(){
-        List<Movie> moviesList=movieRepository.findAllMovies();
+    public List<String> findAllMovies(){
+        List<String> moviesList=movieRepository.findAllMovies();
         return moviesList;
     }
 }
